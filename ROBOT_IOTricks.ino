@@ -17,9 +17,9 @@ bool shouldSaveConfig = false;
 
 #define mqtt_server       "maqiatto.com"
 #define mqtt_port         "1883"
-#define mqtt_user         "sjarab@gmail.com"
-#define mqtt_pass         "Robotayamola"
-#define mqtt_topic        "robot"
+#define mqtt_user         "your@email.com"
+#define mqtt_pass         "your mqyt_password"
+#define mqtt_topic        "your mqtt topic"
 
 WiFiClient espClient;
 PubSubClient client(espClient);
