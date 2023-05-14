@@ -1,0 +1,108 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "Robot i. o. tricks",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MoveIntent",
+                    "slots": [{
+                        "name": "command",
+                        "type": "Command"
+                    },
+                    {
+                        "name": "value",
+                        "type": "AMAZON.NUMBER"
+                    },
+                    {
+                        "name": "metric",
+                        "type": "Metrics"
+                    }
+                ],
+                    "samples": [
+                        "please move {command} {value} {metric}",
+                        "please turn {command} {value} {metric}",
+                        "move {command} {value} {metric}",
+                        "please go {command} {value} {metric}",
+                        "go {command} {value} {metric}",
+                        "please take {command} {value} {metric}",
+                        "take {command} {value} {metric}",
+                        "turn {command} {value} {metric}",
+                        "turn {command}"
+                    ]
+                },
+                {
+                    "name": "PauseIntent",
+                    "samples": [
+                        "please pause",
+                        "pause",
+                        "please halt",
+                        "halt"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "Command",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "forward"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "back"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "left"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "right"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Metrics",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "degrees"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "inches"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "centimeters"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
